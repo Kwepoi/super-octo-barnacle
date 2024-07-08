@@ -550,10 +550,10 @@ Rectangle {
                     KeyNavigation.tab : password
                     Keys.onPressed : {
                         if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
-                            password.focus = false
                             event.accepted = true
                         }
                     }
+                    focus : true
             }
         }
 
